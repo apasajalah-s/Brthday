@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/png" href="bday.png" />
-  <title>happy birthday @soulatte</title>
+  <title>happy birthday</title>
   <link rel="icon" href="https://i.ibb.co.com/hXZsYxZ/heart.png">
   <style>
     * {
@@ -136,7 +136,7 @@
 <body>
   <div class="page active" id="page1">
     <img src="gif/1.gif" alt="Cute Icon" />
-    <h1>Happy Birthday <span class="highlight">sayangkuu ˶ᵔ ᵕ ᵔ˶ ♡</span></h1>
+    <h1>Happy Birthday <span class="highlight"></span></h1>
     <p>your next surprise is just a click away ✨</p>
     <button class="button" onclick="goToPage(2)">tap ‹𝟹</button>
   </div>
@@ -171,7 +171,7 @@
 
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
   <script>
-    const fullLetter = `happy birthday to my favorite pperson! 💙
+    const fullLetter = `Ur day aa hammim! 💙
 
   May all good things find their way to you, 
   wrapping you in joy and warmth. 
@@ -179,18 +179,16 @@
   and your soul with endless happiness. 
   Always know that you deserve the very best, 
   and may your journey be blessed with love, 
-  kindness, and boundless hope.
-  
-  𝜗𝜚 ur prettiest gf >⩊<`;
+  kindness, and boundless hope.`;
 
   function next() {
       const currentPage = document.querySelector('.page.active');
       const nextPage = currentPage.nextElementSibling;
       if (nextPage) {
         const image = document.createElement('img');
-        image.src = 'img1.jpg';  // Ganti dengan path gambar yang sesuai
-        image.alt = 'Tetaplah tersenyum lepas seperti digambar ini.';  // Ganti dengan deskripsi gambar yang relevan
-        nextPage.appendChild(image);  // Menambahkan gambar ke halaman berikutnya
+        image.src = 'img1.jpg'; 
+        image.alt = 'Tetaplah tersenyum lepas seperti digambar ini.';
+        nextPage.appendChild(image); 
         goToPage(parseInt(nextPage.id.replace('page', '')));
       }
     }
